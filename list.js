@@ -59,9 +59,16 @@ function refresh() {
     setCounter()
 }
 
-function setCounter(){
+function setCounter() {
     const count = getItems().length
-    document.getElementById("counter").innerText = `There are ${count} items.`
+
+    tg.translate({
+        key: "counter_text",
+        defaultValue: `There are {count} items.`,
+        params: { count }
+    }).then((translated) => {
+        document.getElementById("counter").innerText = translated
+    })
 }
 
 function createListItem(itemValue, idx) {
@@ -80,7 +87,9 @@ function createListItemTextDiv(itemValue) {
 
 function createListItemDeleteButton(idx) {
     const deleteButton = document.createElement("button")
-    deleteButton.innerText = "Delete"
+    tg.translate({ key: "delete_button", defaultValue: "Delete" }).then((translated) => {
+        deleteButton.innerText = translated
+    })
     deleteButton.onclick = () => removeItem(idx)
     return deleteButton
 }

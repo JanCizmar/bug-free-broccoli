@@ -1,0 +1,9 @@
+{
+  "add_button" : " Přidat",
+  "app_title" : "Moje super aplikace",
+  "counter_text" : "{count, plural, \n  =0 {Tady není žádná položka}\n  =1 {Tady je # položka}\n  few {Tady jsou # položky}\n  other {Tady je # položek}\n}",
+  "delete_button" : "Vymazat",
+  "input_placeholer" : " Co dělat?",
+  "list_title" : " Můj cool seznam",
+  "remove_all_button" : " Odebrat všechny"
+}

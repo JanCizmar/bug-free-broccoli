@@ -1,0 +1,9 @@
+{
+  "add_button" : " Hinzufügen",
+  "app_title" : " Meine gut App",
+  "counter_text" : "Es gibt {count} Artikel.",
+  "delete_button" : "Löschen",
+  "input_placeholer" : " Was ist zu tun?",
+  "list_title" : " Meine coole Liste",
+  "remove_all_button" : " Alles entfernen"
+}

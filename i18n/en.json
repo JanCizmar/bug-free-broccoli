@@ -1,0 +1,9 @@
+{
+  "add_button" : " Add",
+  "app_title" : " My cool App",
+  "counter_text" : "There {count, plural, \n  =0 {are no items}\n  =1 {is # item}\n  other {are # items}\n}.",
+  "delete_button" : "Delete",
+  "input_placeholer" : " What to do?",
+  "list_title" : " My cool list",
+  "remove_all_button" : " Remove All"
+}

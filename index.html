@@ -9,19 +9,45 @@
     <title>My cool App</title>
 </head>
 
-<script src="list.js"></script>
-
 <body>
+    <div id="loading" style="
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;">
+        Loading...
+    </div>
+
     <main>
-        <h1>My cool App</h1>
 
-        <h2>My cool list</h2>
+        <select id="language-select" onchange="onLangChange(this)">
+            <option value="en">English 🇬🇧</option>
+            <option value="cs">Česky 🇨🇿</option>
+            <option value="de">Deutsch 🇩🇪</option>
+        </select>
 
-        <input type="text" placeholder="What to do?" /> <button id="store-button" onclick="add()">Add</button>
+        <h1>{{app_title, My cool App}}</h1>
+
+        <h2>{{list_title, My cool list}}</h2>
+
+        <input type="text" placeholder="{{input_placeholer, What to do?}}" />
+        <button id="store-button" onclick="add()">{{add_button, Add}}</button>
         <ul id="list">
         </ul>
-        <div id="counter"></div><button id="clear-button" onclick="clearList()">Remove All</button>
+        <div id="counter"></div><button id="clear-button" onclick="clearList()">
+            {{remove_all_button, RemoveAll}}
+        </button>
     </main>
 </body>
+
+<script src="https://unpkg.com/@tolgee/core/dist/tolgee.umd.js"></script>
+<script src="https://unpkg.com/@tolgee/ui/dist/tolgee-ui.umd.js"></script>
+<script src="tolgee-setup.js"></script>
+<script src="list.js"></script>
 
 </html>
