@@ -1,0 +1,14 @@
+{
+  "name": "localization_workshop_vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "list.js",
+  "scripts": {
+    "start": "serve -p 3542 ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "13.0.2"
+  }
+}
